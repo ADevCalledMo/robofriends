@@ -3,7 +3,6 @@ import Cardlist from "./Cardlist";
 import Searchbox from "./Searchbox";
 import Scroll from "./Scroll"
 import ErrorBoundry from "./ErrorBoundry"
-import { robots } from "./robots.js";
 import "./App.css";
 
 class App extends Component {
@@ -21,7 +20,7 @@ class App extends Component {
         return response.json();
       })
       .then(users => {
-        this.setState({ robots: robots });
+        this.setState({ robots: users });
       });
   }
 

@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const Cardlist = ({ robots }) => {
   return (
-    <div>
+    <div className='pa3 ma2'>
       {robots.map((user, i) => {
         return (
           <Card
